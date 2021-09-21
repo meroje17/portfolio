@@ -1,0 +1,65 @@
+.homeContainer {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeContainer .description {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.homeContainer .description h1 {
+    font-family: 'apple-bold';
+    font-size: 45px;
+    color: var(--grey-alt);
+    opacity: 0;
+    animation: apparitionX 1.5s linear forwards;
+    padding-right: 6px;
+    border-right: 6px solid var(--white);
+}
+
+.homeContainer .description p {
+    width: fit-content;
+    font-family: 'apple-thin';
+    font-size: 30px;
+    color: var(--grey);
+    margin-top: 11px;
+    opacity: 0;
+    animation: apparitionX 0.9s 0.6s linear forwards;
+    padding-right: 6px;
+    border-right: 6px solid var(--white);
+    cursor: pointer;
+}
+
+.homeContainer .description p:hover {
+    position: relative;
+    border-right: 6px solid var(--brown);
+    border-radius: 2px;
+}
+
+.homeContainer .description p:hover::after {
+    margin-left: 20px;
+    position: absolute;
+    content: "ReactJS";
+    opacity: 0;
+    color: var(--brown);
+    animation: apparitionX 0.5s linear forwards;
+}
+
+@keyframes apparitionX {
+    from {
+        transform: translateX(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

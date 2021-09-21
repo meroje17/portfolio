@@ -46,3 +46,28 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+@font-face {
+    font-family: 'apple-regular';
+    src: url('./fonts/SFNSText-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'apple-bold';
+    src: url('./fonts/SFNSText-Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'apple-thin';
+    src: url('./fonts/SFNSText-Light.otf') format('opentype');
+}
+:root {
+    --shadow: rgba(99, 99, 99, 0.2);
+    --white: #fbfbfb;
+    --grey: #9a9796;
+    --blue: #586786;
+    --brown: #8a6b5e;
+    --light-brown: #ab856e;
+    --beige: #e4c0ac;
+    --grey-alt: #4e5461;
+    --success: #94ce9c;
+    --danger: #df6669;
+    --infos: #8ab6e9;
+}
