@@ -71,3 +71,8 @@ table {
     --danger: #df6669;
     --infos: #8ab6e9;
 }
+
+.App {
+    position: relative;
+    overflow: hidden;
+}

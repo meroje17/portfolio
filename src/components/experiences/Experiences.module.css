@@ -1,15 +1,11 @@
+.experiences {
+    margin: 30px 0;
+}
+
 .experience {
     display: grid;
     grid-template-columns: 3fr 7fr;
     margin: 20px 22vw;
-}
-
-.experience:last-child {
-    margin-bottom: 30px;
-}
-
-.experience:first-child {
-    margin-top: 30px;
 }
 
 .leftSide {

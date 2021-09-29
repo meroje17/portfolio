@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
 import Experiences from './components/experiences/Experiences';
+import Footer from './components/footer/Footer';
 import Home from './components/home/Home';
 
 const App = () => (
@@ -19,6 +20,7 @@ const App = () => (
                 </Route>
             </Switch>
         </Router>
+        <Footer />
     </div>
 );
 
