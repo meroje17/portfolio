@@ -35,7 +35,7 @@ const Experience = ({ data }) => {
     return (
         <div className={styles.experience}>
             <div className={styles.leftSide}>
-                <a href={link} target='_blank'>
+                <a href={link} target='_blank' rel='noreferrer'>
                     <img src={logo} alt={alt} className={styles.logo} />
                 </a>
                 <div className={styles.verticalDivider} />
